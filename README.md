@@ -19,7 +19,7 @@ Throttling is a technique used to control the rate at which a function is called
 
 Simply click the button labeled "Generate Color" to initiate the generation of a random HEX color. The throttle method will ensure that the colors are generated at an optimal rate, providing a seamless user experience.
 
-## :mag: Why Throttle?
+## :sparkles: Why Throttle?
 
 Throttling is a beneficial technique in software development, particularly in scenarios where the frequency of function execution needs to be controlled. Here are some characteristics and advantages of using throttle:
 
