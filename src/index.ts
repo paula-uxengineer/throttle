@@ -2,7 +2,7 @@ export function generateRandomColor (): string {
 
     let numero = Math.floor (Math.random () * 16777216); // 16777216 = total numbers of hexadecimal colors (256^3 = 16777216)
 
-    let color = '#' + numero.toString (16); // 16 = transform random number to hexadecimal base16
+    const color = '#' + numero.toString(16); // 16 = transform random number to hexadecimal base16
 
     return color;
   }
