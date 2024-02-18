@@ -36,7 +36,9 @@ Enhanced user experience is achieved by maintaining a responsive user interface 
 
 If a user attempts to change the background color by repeatedly clicking the color generation button, the throttle function will ensure that the color change occurs smoothly and seamlessly, even if the user clicks multiple times quickly. This provides a consistent and enjoyable user experience, as the application responds predictably and is not overwhelmed by multiple unnecessary color changes.
 
-## :computer: Prerequisites
+## :exclamation: Get started
+
+### :computer: Prerequisites
 
 - Node.js (version >= 14)
 - npm (version >= 6)
@@ -44,7 +46,7 @@ If a user attempts to change the background color by repeatedly clicking the col
 - Jest
 - Vite
 
-## :floppy_disk: Installation
+### :floppy_disk: Installation
 
 1. To get started, you first need to clone the repository:
 
@@ -58,7 +60,7 @@ git clone [https://github.com/paula-uxengineer/to-do-list.git]
 npm install
 ```
 
-## :checkered_flag: How To Start
+### :checkered_flag: How To Start
 
 To start the app in development mode, run the following script:
 
@@ -66,7 +68,7 @@ To start the app in development mode, run the following script:
 npm run dev
 ```
 
-## :space_invader: Scripts
+### :space_invader: Scripts
 This project comes with several predefined scripts in the package.json file:
 
 ```test```: Runs tests using Jest.
@@ -87,12 +89,12 @@ npm run dev
 npm run vite
 ```
 
-## :wrench: Dependencies 
+### :wrench: Dependencies 
 
 - "react": "^18.2.0",
 - "react-dom": "^18.2.0"
 
-## :hammer: Dev Dependencies 
+### :hammer: Dev Dependencies 
 
 - "@types/react": "^18.2.55",
 - "@types/react-dom": "^18.2.19",
@@ -110,7 +112,7 @@ npm run vite
 - "ts-jest": "^29.1.2",
 - "typescript": "^5.3.3"
 
-## :file_folder: Folder structure
+### :file_folder: Folder structure
  
 ```
 src/
@@ -137,7 +139,7 @@ src/
 ```
 
 
-## :unlock: Contributing
+### :unlock: Contributing
 
 Contributions are welcome! To contribute to this project:
 
@@ -147,5 +149,5 @@ Contributions are welcome! To contribute to this project:
 Submit a pull request targeting the develop branch.
 For bug reports and feature requests, please open an issue on the GitHub repository.
 
-## :mortar_board:License
+### :mortar_board:License
 This project is licensed under the MIT License. See the LICENSE file for more information.
