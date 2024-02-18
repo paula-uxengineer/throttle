@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "test": "jest",
+    "test": "jest --detectOpenHandles", 
     "dev": "ts-node src/index.ts",
     "cli": "ts-node ./src/cli/app-cli.ts"
   },

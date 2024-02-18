@@ -1,4 +1,4 @@
-function generateRandomColor (): string {
+export function generateRandomColor (): string {
 
     let numero = Math.floor (Math.random () * 16777216); // 16777216 = total numbers of hexadecimal colors (256^3 = 16777216)
 
@@ -6,44 +6,32 @@ function generateRandomColor (): string {
 
     return color;
   }
-
+  
 
 export function throttle (f: Function, delay: number): Function {
     
-    let inThrottle: boolean = false;
+    let toWait: boolean = false;
     
     return (...args: any []) => {
         
-        if (!inThrottle) {
+        if (!toWait) {
             f.apply (null, args);
-            inThrottle = true;
+            toWait = true;
             
             setTimeout (() => {
-                inThrottle = false;
+                toWait = false;
             }, delay);
         }
     };
 }
 
 
-generateRandomColor();
+// generateRandomColor();
 
-const generateThrottleColor = throttle(generateRandomColor, 3000); 
+// const generateThrottleColor = throttle(() => {
+//     console.log(generateRandomColor())}, 3000); 
+    
+// generateThrottleColor();
 
-const call = generateThrottleColor();
-console.log(call); 
-
-
-// function changeBackgroundColor (elemento: HTMLElement): void {
-
-//     let color = generateRandomColor ();
-
-//     elemento.style.backgroundColor = color;
-// }
-
-
-// let elemento = document.querySelector ('body');
-
-// document.addEventListener ('mousemove', function () {
-//   throttle (changeBackgroundColor, 1000) (elemento);
-// });
+// setTimeout(() => generateThrottleColor(),3000);
+// setTimeout(() => generateThrottleColor(),4000);
